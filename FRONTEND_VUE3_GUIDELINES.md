@@ -23,6 +23,7 @@ src/
 ├── utils/            # 通用工具方法
 ├── directives/       # 自定义指令（可选）
 ├── hooks/            # 封装的逻辑函数（composables）
+|—— plugins/          # Vue插件注入管理
 └── App.vue
 ```
 

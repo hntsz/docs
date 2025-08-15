@@ -14,7 +14,10 @@ git clone https://github.com/your-org/your-project.git
 
 ---
 
-### 步骤二：拉取最新的 `develop` 分支并创建功能分支
+### 步骤二：拉取最新的 `develop`, `staging`, `main` 分支并创建功能分支
+
+- 如果你的功能属于已经计划中开发工作的内容范围，选择 `develop` or `staging`。
+- 如果你的功能属于没有计划的临时功能添加，选择 `main`。
 
 ```bash
 git checkout develop
@@ -49,7 +52,7 @@ git push origin feature/login-button
 
 1. 打开项目主页；
 2. 点击 “Compare & pull request”；
-3. 选择将 `feature/login-button` 合并到 `develop`；
+3. 选择将 `feature/login-button` 合并到 `develop` 或 `staging`；
 4. 填写 PR 标题（可沿用 commit message），并在描述中附上：
 
    * 实现功能简述
@@ -79,3 +82,4 @@ git pull origin develop
 git checkout feature/login-button
 git pull --rebase origin develop
 ```
+
